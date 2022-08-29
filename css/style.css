@@ -1,0 +1,45 @@
+.foto{
+  height:250px;
+  width:300px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 100px;
+  border-radius: 15px;
+  box-shadow: -30px 30px 3px #ccc;
+  transform:rotate(-30deg);
+  transition-duration: 2s;
+}
+.foto:hover{
+  height:350px;
+  width:400px;
+  transform:rotate(0deg);
+  box-shadow: 0px 0px 0px;
+  transition-duration: 2s;
+}
+.main_animation{
+  display: flex;
+}
+.animationn{
+  height:500px;
+  width:500px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.animation{
+  width:250px;
+  height:250px;
+  background: #8A2BE244;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 100px;
+  animation-name: circlle;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+@keyframes circlle {
+  0% {border-radius: 0%;}
+  50% {border-radius: 50%; width:100px; height:100px;background:#8A2BE2;}
+  100% {border-radius: 0%}
+}
